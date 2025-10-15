@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Market Analysis</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+    html, body {
+      margin: 0;
+      height: 100%;
+      overflow-y: auto;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: radial-gradient(circle at 25% 25%, rgba(0,255,200,0.15), transparent 60%),
+                  radial-gradient(circle at 75% 80%, rgba(150,0,255,0.1), transparent 60%),
+                  #000;
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      text-align: center;
+      padding: 18vh 10vw 8vh;
+    }
+
+    .top-nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(8px);
+      z-index: 10;
+      padding: 0.6rem 0;
+      text-align: center;
+    }
+
+    .top-nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: inline-flex;
+      gap: 1.5rem;
+    }
+
+    .top-nav ul li a {
+      color: rgba(255, 255, 255, 0.85);
+      text-decoration: none;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      transition: all 0.3s ease;
+    }
+
+    .top-nav ul li a:hover {
+      color: #00ffc6;
+      text-shadow: 0 0 10px rgba(0, 255, 200, 0.5);
+    }
+
+    h1 {
+      font-size: 3.3rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, #00ffc6, #a370ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-transform: uppercase;
+      margin-bottom: 0.4rem;
+      text-shadow: 0 0 15px rgba(150, 0, 255, 0.3);
+    }
+
+    h2 {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.6);
+      letter-spacing: 0.15em;
+      margin-bottom: 2rem;
+      text-transform: uppercase;
+    }
+
+    p {
+      max-width: 900px;
+      margin: 0 auto 4rem;
+      color: rgba(255,255,255,0.9);
+      font-size: 1.1rem;
+      font-weight: 300;
+      line-height: 1.8;
+    }
+
+    .image-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin: 3rem auto 5rem;
+      padding: 1rem 0;
+    }
+
+    .image-gallery img {
+      width: 400px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(0,255,200,0.2);
+    }
+
+    .insights {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2.5rem;
+      max-width: 1100px;
+      margin: 6rem auto 2rem;
+    }
+
+    @media (max-width: 800px) {
+      .insights {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .block {
+      background: rgba(255,255,255,0.05);
+      border-radius: 16px;
+      padding: 1.8rem;
+      box-shadow: inset 0 0 25px rgba(0,255,200,0.08),
+                  0 0 30px rgba(150,0,255,0.1);
+      backdrop-filter: blur(6px);
+      text-align: left;
+    }
+
+    .block h3 {
+      color: #00ffc6;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .block p {
+      color: rgba(255,255,255,0.9);
+      font-weight: 300;
+      line-height: 1.8;
+      font-size: 1.05rem;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="top-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="context.html">Context</a></li>
+      <li><a href="market.html">Market Analysis</a></li>
+      <li><a href="hmw.html">HMW Question</a></li>
+      <li><a href="literature.html">Literature Review</a></li>
+      <li><a href="ideas.html">Brainstorming Ideas</a></li>
+    </ul>
+  </nav>
+
+  <h1>Market Analysis</h1>
+  <h2>Design for Smart Pet Systems</h2>
+
+  <p>
+    The global smart pet care market is rapidly expanding, expected to surpass USD 6 billion by 2030. Most existing solutions focus on automation, monitoring, and remote control. While these products enhance convenience for owners, they rarely address pets’ physical comfort or emotional states in real time.
+  </p>
+
+  <p>
+    Our project explores a new generation of responsive and adaptive pet systems—products that can sense, react, and self-adjust to environmental and behavioral changes in a more natural way. This emerging direction shifts from simple control-based systems to intelligent, bio-inspired, and empathetic experiences.
+  </p>
+
+  <div class="image-gallery">
+    <img src="images/smart_storage.jpg" alt="Smart Storage Pet Product">
+    <img src="images/718mHgLk4YL._AC_SL1500_.jpg" alt="Pet Product 2">
+    <img src="images/PetPace-Smart-Dog-Collar-nora-lying-behind-the-product-1030x824.jpg" alt="Pet Product 3">
+  </div>
+
+  <div class="insights">
+    <div class="block">
+      <h3>From Passive Products → to Responsive Systems</h3>
+      <p>
+        Most current devices require user control or app-based input. There is an opportunity for self-reactive systems that function independently and intuitively. 
+      </p>
+    </div>
+
+    <div class="block">
+      <h3>From Automation → to Adaptation</h3>
+      <p>
+        Existing Solutions focuses on repeating routines. A next-generation pet system could recognize environmental cues like temperature and humidity, adjusting solutions accordingly.
+      </p>
+    </div>
+
+    <div class="block">
+      <h3>From Data → to Experience</h3>
+      <p>
+        Current smart pet products emphasize data metrics, which often remain abstract to users. 
+        A responsive design instead uses tangible cues—color changes or surface texture to make the pet’s needs visible.
+      </p>
+    </div>
+
+    <div class="block">
+      <h3>From Efficiency → to Empathy</h3>
+      <p>
+        The smart pet market has optimized convenience but overlooked emotion. 
+        Designing systems that respond to pets’ states can foster empathy, strengthening the bond between pets and owners.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

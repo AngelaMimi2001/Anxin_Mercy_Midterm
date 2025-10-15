@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Brainstorming Ideas</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+    html, body {
+      margin: 0;
+      height: 100%;
+      overflow-y: auto;
+      scroll-behavior: smooth;
+    }
+    body {
+      background: radial-gradient(circle at 20% 25%, rgba(0,255,200,0.15), transparent 60%),
+                  radial-gradient(circle at 80% 75%, rgba(150,0,255,0.1), transparent 60%),
+                  #000;
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      text-align: center;
+      padding: 18vh 10vw 8vh;
+    }
+
+    /* 顶部导航栏样式 */
+    .top-nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(8px);
+      z-index: 10;
+      padding: 0.6rem 0;
+      text-align: center;
+    }
+
+    .top-nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: inline-flex;
+      gap: 1.5rem;
+    }
+
+    .top-nav ul li a {
+      color: rgba(255, 255, 255, 0.85);
+      text-decoration: none;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      transition: all 0.3s ease;
+    }
+
+    .top-nav ul li a:hover {
+      color: #00ffc6;
+      text-shadow: 0 0 10px rgba(0, 255, 200, 0.5);
+    }
+
+    h1 {
+      font-size: 3.3rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, #00ffc6, #a370ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-transform: uppercase;
+      margin-bottom: 0.4rem;
+      text-shadow: 0 0 15px rgba(150, 0, 255, 0.3);
+    }
+    h2 {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.7);
+      letter-spacing: 0.15em;
+      margin-bottom: 2rem;
+      text-transform: uppercase;
+    }
+    .idea {
+      max-width: 900px;
+      margin: 0 auto 2.5rem;
+    }
+    .idea h3 {
+      color: #00ffc6;
+      margin-bottom: 0.5rem;
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .idea p {
+      color: rgba(255,255,255,0.9);
+      font-weight: 300;
+      line-height: 1.8;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ✅ 统一导航栏 -->
+  <nav class="top-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="context.html">Context</a></li>
+      <li><a href="market.html">Market Analysis</a></li>
+      <li><a href="hmw.html">HMW Question</a></li>
+      <li><a href="literature.html">Literature Review</a></li>
+      <li><a href="ideas.html">Brainstorming Ideas</a></li>
+    </ul>
+  </nav>
+
+  <!-- 页面正文 -->
+  <h1>Brainstorming Ideas</h1>
+  <h2>Design for Smart Pet Systems</h2>
+
+  
+  <!-- ✅ 新增图片行 -->
+  <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 40px;">
+    <img src="brain/i1.png" alt="Idea 1" style="width: 30%; border-radius: 10px;">
+    <img src="brain/i2.png" alt="Idea 2" style="width: 30%; border-radius: 10px;">
+    <img src="brain/i3.jpg" alt="Idea 3" style="width: 30%; border-radius: 10px;">
+  </div>
+  
+
+  
+  <div class="idea">
+    <h3>Emotion-Expressive Collar</h3>
+    <p>Principle: Detects body temperature and heart-rate changes; the collar color shifts when the pet is excited, anxious, or relaxed.</p>
+    <p>Meaning: Visualizes the pet’s emotional state, helping owners better understand their pet’s wellbeing.</p>
+  </div>
+
+  <div class="idea">
+    <h3>Humidity-Responsive Material</h3>
+    <p>Purpose: Placed near a pet’s water or food bowl to indicate when water is empty or food becomes damp.</p>
+    <p>Principle: Uses a hygroscopic swelling material that changes shape or color as humidity varies, triggering a signal to remind the owner to refill or replace.</p>
+  </div>
+
+  <div class="idea">
+    <h3>Auto-Shaping Pet Bed</h3>
+    <p>Logic: The material slightly bends when the pet enters, automatically conforming to the body’s shape.</p>
+    <p>Function: The bed gently adjusts its form to accommodate the pet’s different resting positions.</p>
+  </div>
+
+  <div class="idea">
+    <h3>Safety-Monitoring Mat</h3>
+    <p>Function: When a pet’s paw or skin becomes abnormally wet, hot, or slippery, the mat reacts and records the condition.</p>
+    <p>Helps owners identify potential health risks such as skin irritation or environmental discomfort.</p>
+  </div>
+
+  <div class="idea">
+    <h3>Bio-Inspired Skin Surface</h3>
+    <p>Shark-skin microstructures with antibacterial and anti-slip features for hygiene and comfort.</p>
+  </div>
+
+  <div class="idea">
+    <h3>Self-Cleaning Feeding Bowl</h3>
+    <p>Lotus-leaf-inspired hydrophobic coating reduces residue and promotes healthier eating.</p>
+  </div>
+</body>
+</html>

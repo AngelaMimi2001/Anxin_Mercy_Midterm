@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Literature Review</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at 40% 30%, rgba(0,255,200,0.15), transparent 60%),
+                  radial-gradient(circle at 60% 70%, rgba(150,0,255,0.1), transparent 60%),
+                  #000;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 18vh 10vw 8vh;
+      text-align: center;
+    }
+
+    .top-nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(8px);
+      z-index: 10;
+      padding: 0.6rem 0;
+      text-align: center;
+    }
+
+    .top-nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: inline-flex;
+      gap: 1.5rem;
+    }
+
+    .top-nav ul li a {
+      color: rgba(255, 255, 255, 0.85);
+      text-decoration: none;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      transition: all 0.3s ease;
+    }
+
+    .top-nav ul li a:hover {
+      color: #00ffc6;
+      text-shadow: 0 0 10px rgba(0, 255, 200, 0.5);
+    }
+
+    h1 {
+      font-size: 3.3rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, #00ffc6, #a370ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-transform: uppercase;
+      margin-bottom: 0.4rem;
+      text-shadow: 0 0 15px rgba(150, 0, 255, 0.3);
+    }
+
+    h2 {
+      color: rgba(255,255,255,0.7);
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      font-size: 1rem;
+      margin-bottom: 3rem;
+    }
+
+    .literature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      width: 100%;
+      max-width: 1200px;
+      margin-bottom: 4rem;
+    }
+
+    .lit-card {
+      background: rgba(255,255,255,0.05);
+      border-radius: 16px;
+      padding: 1rem;
+      box-shadow: 0 0 15px rgba(0,255,200,0.1);
+      transition: transform 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: left;
+    }
+
+    .lit-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .lit-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 1rem;
+    }
+
+    .lit-card h3 {
+      color: #00ffc6;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .lit-card p {
+      color: rgba(255,255,255,0.9);
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 0.5rem;
+    }
+
+    .lit-card a {
+      color: #a370ff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .lit-card a:hover {
+      color: #00ffc6;
+      text-shadow: 0 0 8px rgba(0,255,200,0.5);
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2.4rem; }
+      .lit-card img { height: 180px; }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="top-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="context.html">Context</a></li>
+      <li><a href="market.html">Market Analysis</a></li>
+      <li><a href="hmw.html">HMW Question</a></li>
+      <li><a href="literature.html">Literature Review</a></li>
+      <li><a href="ideas.html">Brainstorming Ideas</a></li>
+    </ul>
+  </nav>
+
+  <h1>Literature Review</h1>
+  <h2>Design for Smart Pet Systems</h2>
+
+  <div class="literature-grid">
+    <div class="lit-card">
+      <img src="literature/s-l640.jpg" alt="Smart Materials Cover">
+      <h3>Smart Materials and Structures</h3>
+      <p>Gandhi and Thompson's foundational work introduces smart materials that respond dynamically to environmental stimuli.</p>
+      <a href="https://books.google.com/books?id=5NyH0h1OgisC" target="_blank">Read More</a>
+    </div>
+
+    <div class="lit-card">
+      <img src="literature/OIP.jpeg" alt="Material Computation Cover">
+      <h3>Material Computation: Higher Integration in Morphogenetic Design</h3>
+      <p>Examines integration of material info into design, inspired by biological paradigms to create adaptive architectural forms.</p>
+      <a href="https://onlinelibrary.wiley.com/doi/10.1002/ad.1374?msockid=2c9d9d125f536ec90b1e8b7c5e696f02" target="_blank">Read More</a>
+    </div>
+
+    <div class="lit-card">
+      <img src="literature/AI-Powered-Design-2024-02.jpg" alt="AI as Co-Creator Cover">
+      <h3>AI as a Co-Creator and a Design Material</h3>
+      <p>Explores AI as a collaborative partner in design, enhancing creativity and supporting spontaneous insight generation.</p>
+      <a href="https://ouci.dntb.gov.ua/en/works/4grdbDa0/" target="_blank">Read More</a>
+    </div>
+
+    <div class="lit-card">
+      <img src="literature/janines_book.jpg" alt="Biomimicry Cover">
+      <h3>Biomimicry: Innovation Inspired by Nature</h3>
+      <p>Delves into design solutions inspired by nature’s time-tested strategies for sustainable and efficient innovations.</p>
+      <a href="https://biomimicry.net/product/janine-book/" target="_blank">Read More</a>
+    </div>
+
+    <div class="lit-card">
+      <img src="literature/9780822347729-us.jpg" alt="New Materialisms Cover">
+      <h3>New Materialisms: Ontology, Agency, and Politics</h3>
+      <p>Presents new materialist perspectives challenging traditional views of matter and agency in social and political contexts.</p>
+      <a href="https://www.dukeupress.edu/new-materialisms" target="_blank">Read More</a>
+    </div>
+
+    <div class="lit-card">
+      <img src="literature/Em.jpg" alt="Pet Cat Feeder Cover">
+      <h3>Research on Pet Cat Feeder Design Based on Emotional Design (2022)</h3>
+      <p>Applies Norman’s emotional design theory to a smart cat feeder, integrating aesthetics, remote interaction, and a fish tank.</p>
+      <a href="https://www.researchgate.net/publication/363175556_Research_on_Pet_Cat_Feeder_Design_Based_on_Emotional_Design" target="_blank">Read More</a>
+    </div>
+
+    <div class="lit-card">
+      <img src="literature/Paws.jpg" alt="Smart Paws Cover">
+      <h3>Smart Paws: AI-Powered Pet Wearables (2025)</h3>
+      <p>An AI smart collar tracking pets’ vitals, activity, and emotions, providing alerts, GPS, nutrition guidance, and a community platform.</p>
+      <a href="https://www.researchgate.net/publication/387806859_Smart_Paws_AI-Powered_Pet_Wearables" target="_blank">Read More</a>
+    </div>
+
+    <div class="lit-card">
+      <img src="literature/Ad.jpg" alt="Advancements in Pet Care Technology Cover">
+      <h3>Advancements in Pet Care Technology: A Comprehensive Survey (2024)</h3>
+      <p>Survey of modern pet-care technologies including smart collars, feeders, cameras, telemedicine, and robotic toys.</p>
+      <a href="https://www.researchgate.net/publication/399612345_Advancements_in_Pet_Care_Technology_A_Comprehensive_Survey" target="_blank">Read More</a>
+    </div>
+
+  </div>
+</body>
+</html>
